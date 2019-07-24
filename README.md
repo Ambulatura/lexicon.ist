@@ -31,5 +31,6 @@ http://127.0.0.1:5000/
 
 <br/>
 <br/>
+
 *Note: The website has some bugs and only work properly on 1920x1080.*
 
