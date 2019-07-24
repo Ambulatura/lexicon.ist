@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Lexicon Password Generator allows you to create secure, powerful and unique passwords in just a few clicks with a simple and modern interface."/> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/> 
+        <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+        <link href="static/style.css" rel="stylesheet"/>
+        <link href="static/mstyle.css" rel="stylesheet"/>
+        <script src="static/jquery-3.3.1.min.js"></script>
+        <script src="static/script.js"></script>
+        <title>Lexicon - Password Generator</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <img class="brand" src="static/nlexicon.png">
+	</div>
+        <div id="center" class="active-lines">
+            <div id="ll" class="four-lines">
+                <div id="parts">
+                    <div id="l1l2">
+                        <div id="l1" class="line"></div>
+                        <div id="l2" class="line"></div>
+                    </div>
+                    <div id="l3l4">
+                        <div id="l3" class="line"></div>
+                        <div id="l4" class="line"></div>
+                    </div>
+                </div>
+                <div class="square">
+                    <div id="numbers">
+                        <span>0123456879</span>
+                    </div>
+                    <div id="specials">
+                        <span>$peci@ls</span>
+                    </div>
+                    <div id="bletters">
+                        <span>LETTERS</span>
+                    </div>
+                    <div id="sletters">
+                        <span>letters</span>
+                    </div>
+                    <form id="pform" method="POST">
+                        <button id="generate">
+                            <div class="wave"></div>
+                            <img class="gen-header" src="static/bblogo.png">
+                        </button>
+                        <input id="number-input" type="text" name="number" value="{{ request.form.number }}">
+                        <input id="bletter-input" type="text" name="bletter" value="{{ request.form.bletter }}">
+                        <input id="sletter-input" type="text" name="sletter" value="{{ request.form.sletter }}">
+                        <input id="special-input" type="text" name="special" value="{{ request.form.special }}">
+                        <input id="length" type="number" name="length" value="{{ request.form.length }}" placeholder="Length">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="resultnderror"></div>
+        <span class="quote">Generate your password</span>
+    </body>
+</html>

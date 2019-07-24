@@ -1,0 +1,316 @@
+body {
+    position: static;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(29, 54, 58); */
+    background-color: rgb(38, 50, 56);
+    overflow: hidden;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(29, 40, 44);
+    user-select: none;
+    -moz-user-select: none;
+    border-bottom: 2px solid rgb(249, 170, 51);
+}
+
+.brand {
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    cursor: pointer;
+}
+
+.quote {
+    position: fixed;
+    top: 90%;
+    height: 20px;
+    width: 100%;    
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(1, 141, 132);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-left: -7.5px;
+}
+
+.active-lines {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    margin-top: -350px;
+    margin-left: -350px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.four-lines {
+    position: absolute;
+    width: 390px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -195px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.line {
+    background-color: rgb(249, 170, 51);
+    width: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#l1l2 {
+    position: absolute;
+    width: 195px;
+    height: 600px;
+}
+
+#l3l4 {
+    position: absolute;
+    width: 195px;
+    height: 600px;
+}
+
+#l1 {
+    position: absolute;
+    top: 50%;
+    height: 430px;
+    margin-top: -215px;
+}
+
+#l2 {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    height: 600px;
+    margin-top: -300px;
+}
+
+#l3 {
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    height: 600px;
+    margin-top: -300px;
+}
+
+#l4 {
+    position: absolute;
+    top: 50%;
+    left: 330px;
+    height: 430px;
+    margin-top: -215px;
+}
+
+.square {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: rgb(29, 40, 44);
+    transform: rotate(45deg);
+    border: 1px solid rgb(249, 170, 51);
+    border-radius: 0px;
+    display: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+#numbers {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 150px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    text-align: center;
+    line-height: 230px;
+    border-right: 1px solid rgb(249, 170, 51);
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+#numbers:hover {background-color: rgb(38, 50, 56) !important;}
+
+#generate {
+    position: absolute;
+    top: 225px;
+    left: 225px;
+    width: 224px;
+    height: 224px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    text-align: center;
+    border-left: 1px solid rgb(249, 170, 51);
+    border-top: 1px solid rgb(249, 170, 51);
+    border-bottom: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* #generate:hover .wave{ background-color: white; opacity: 0.1; transform: scale(1); transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);}
+
+.wave {
+    width: 224px;
+    height: 224px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+} */
+
+.wave {
+    width: 0;
+    height: 0;
+    background-color: whitesmoke;
+    opacity: 0.1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: scale(1);
+    backface-visibility: hidden;
+    transform: scale(1);
+    display: "inline-block";
+}
+
+.gen-header {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transform: rotate(-45deg);
+    transform-origin: 0 0;
+}
+
+#specials {
+    position: absolute;
+    top: 299px;
+    left: 124px;
+    width: 299px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    line-height: 100px;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    border-top: 1px solid rgb(249, 170, 51);
+    border-bottom: 1px solid rgb(249, 170, 51);
+    font-family: "Roboto", sans-serif;
+}  
+
+#specials:hover {background-color: rgb(38, 50, 56) !important;}
+
+#bletters {
+    position: absolute;
+    top: 299px;
+    left: 0;
+    width: 174px;
+    height: 124px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    text-align: center;
+    line-height: 130px;
+    border-right: 1px solid rgb(249, 170, 51);
+    font-family: "Roboto", sans-serif;
+}
+
+#bletters:hover {background-color: rgb(38, 50, 56) !important;}
+
+#sletters {
+    position: absolute;
+    top: 0;
+    left: 226px;
+    width: 224px;
+    height: 224px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    text-align: center;
+    line-height: 220px;
+    font-family: "Roboto", sans-serif;
+}
+
+#sletters:hover {background-color: rgb(38, 50, 56) !important;}
+
+#length {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 122px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    text-align: center;
+    border: 0px;
+    /* border-bottom: 1px solid rgb(249, 170, 51); */
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+#length:hover {background-color: rgb(38, 50, 56) !important; color: rgb(249, 170, 51) !important;}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::placeholder {
+    color: rgb(1, 141, 132);
+    opacity: 1;
+}
+
+#number-input {
+    display: none;
+}
+
+#bletter-input {
+    display: none;
+}
+
+#sletter-input {
+    display: none;
+}
+
+#special-input {
+    display: none;
+}
+
+#resultnderror {
+    position: absolute;
+    width: 350px;
+    height: 25px;
+    top: 70px;
+    left: 50%;
+    margin-left: -175px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(1, 141, 132);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
