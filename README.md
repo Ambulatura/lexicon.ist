@@ -1,6 +1,6 @@
-# Simple Password Generator Website<br/><br/>
+# Simple Password Generator Website<br/>
 
-Create file and name it *lexicon*<br/><br/>
+Create file and name it *lexicon*<br/>
 
 Open CMD and go to *lexicon*
 
