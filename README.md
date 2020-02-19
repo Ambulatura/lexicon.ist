@@ -1,5 +1,4 @@
-# lexicon.ist
-Simple Password Generator Website<br/><br/>
+# Simple Password Generator Website<br/><br/>
 
 Create file and name it *lexicon*<br/><br/>
 
