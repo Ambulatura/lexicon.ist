@@ -5,9 +5,9 @@ Create file and name it *lexicon*<br/><br/>
 
 Open CMD and go to *lexicon*
 
-```cd C:\path\to\lexicon\``` and copy static, templates and app.py<br/><br/>
+```cd C:\path\to\lexicon\``` and paste static, templates and app.py<br/><br/>
 
-Create virtual environment
+Create virtual environment in *lexicon*
 
 ```python -m venv .\venv```<br/><br/>
 
